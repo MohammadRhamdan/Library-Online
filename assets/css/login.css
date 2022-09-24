@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+p, h2 {
+  margin-bottom: 10px;
+}
+
+
+.c-abuDark {
+  color: rgb(189, 184, 184);
+  text-shadow: 0 0 1px black;
+}
+
+/* container */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+
+/* left image */
+.image {
+  width: 100%;
+  flex: 1;
+  height: 100vh;
+  display: flex;
+}
+
+.image .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.image h2 {
+  color: rgb(247, 245, 245);
+  margin-top: 40px;
+  margin-left: 20px;
+  position: absolute;
+  
+}
+
+/* right form */
+.form {
+  flex: 1;
+  height: 100vh;
+}
+
+
+.form .img {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 15px;
+}
+
+.form .img img {
+  width: 100px;
+  height: 100px;
+}
+
+.form .text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.form .text h2 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 45px;
+  margin-bottom: -3px;
+}
+
+.form form {
+  width: 70%;
+  margin: auto;
+  margin-top: 4px;
+  box-shadow: 0 0 3px 3px rgb(216, 211, 211);
+  border-radius: 4px;
+}
+
+.form form input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 3px solid rgb(216, 211, 211);
+  height: 55px;
+  transition: .2s;
+}
+
+.form form input:focus {
+  box-shadow: 0 0 2px 2px rgb(149, 148, 236);
+  border-bottom: 3px solid rgb(149, 148, 236);
+  border-radius: 4px;
+  outline: none;
+  font-size: 18px;
+}
+
+.form .checkBox {
+  width: 70%;
+  height: 30px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.form .checkBox a {
+  text-decoration: none;
+  color: black;
+  line-height: 30px;
+}
+
+.form .checkBox .left {
+  display: flex;
+  column-gap: 10px;
+}
+
+.form .checkBox .left p {
+  line-height: 30px;
+}
+
+
+
+
+
+.form .submit {
+  display: flex;
+  width: 70%;
+  column-gap: 7px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.form .submit .sign {
+  width: 70px;
+  padding: 2px;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+}
+
+.form .submit .login {
+  width: 70px;
+  border: none;
+  padding: 2px;
+  background-color: rgb(230, 221, 221);
+  color: rgb(155, 151, 151);
+  border-radius: 3px;
+}
+.form .submit .login:hover {
+  background-color: black;
+  color: white;
+}
+
+.form .privacy {
+  margin: auto;
+  margin-top: 20px;
+  width: 70%;
+}
+
+.form .privacy p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+/* breakpoint */
+@media screen and (max-width: 768px) {
+  .image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .image {
+    flex: 1.1;
+  } .form {
+    flex: 1;
+  } .form form {
+    width: 85%;
+  } .form .text {
+    width: 85%;
+  } .form .privacy {
+    width: 85%;
+  } .form .submit {
+    width: 85%;
+  } .form .checkBox {
+    width: 85%;
+  }
+}

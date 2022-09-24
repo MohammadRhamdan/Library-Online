@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.dilan {
+  border-radius: 10px;
+}
+
+.dilanListBook {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.boxShadow {
+  box-shadow: 0 0 1px 2px rgb(230, 224, 224);
+  border-top-right-radius: 13px;
+  border-top-left-radius: 13px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  width: 20%;
+  box-shadow: 0 0 1px  rgb(194, 188, 188);
+  /* border: 1px solid red; */
+}
+
+.left .img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  /* border: 1px solid blue; */
+  padding: 0 20px 0 20px;
+}
+
+.left .img img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  /* margin: auto; */
+}
+
+.left .img h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+.left .navigasi {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  row-gap: 10px;
+  justify-content: flex-start;
+  padding: 0 0 0 20px;
+}
+
+.left .navigasi a {
+  color: black;
+  text-decoration: none;
+}
+
+.content {
+  width: 80%;
+}
+
+.content nav {
+  padding: 5px 20px 5px 20px;
+  height: 45px;
+  display: flex;
+  box-shadow: 4px 3px 2px rgb(214, 207, 207);
+  justify-content: space-between;
+}
+
+.content nav .dropDown {
+    width: 23%;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.content nav .right {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+
+
+.content nav .search {
+  width: 45%;
+  height: 30px;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(175, 172, 172);
+  z-index: 1;
+}
+
+.content nav .search input {
+  padding: 6px;
+  height: 25px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.content nav .search input:focus {
+  font-size: 16px;
+}
+.content nav .image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.content nav .image img {
+  width: 30px;
+  height: 30px;
+}
+
+.isiContent .geser {
+  margin-top: 60px;
+  display: flex;
+  column-gap: 20px;
+  padding: 25px;
+}
+
+.isiContent .geser .cart {
+  width: 40%;
+  height: 200px;
+}
+
+.listBook {
+  /* width: 100%; */
+  padding: 40px;
+  margin-top: 60px;
+}
+
+.listBook .cartListBook {
+  width: 40%;
+}
+
+.listBook .cartListBook .text {
+  padding: 8px;
+}
+
+.listBook .cartListBook .text a {
+  text-decoration: none;
+  color: black;
+}
+
+.listBook .container-listBook {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+}
